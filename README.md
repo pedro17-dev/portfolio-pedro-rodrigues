@@ -15,4 +15,4 @@ Portfólio pessoal desenvolvido com HTML, CSS e JavaScript com o objetivo de apr
 - Cardápio
 
 ## 🔗 Acesse
-[Portfólio Online](LINK)
+[Portfólio](LINK)
