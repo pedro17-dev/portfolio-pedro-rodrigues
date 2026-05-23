@@ -294,51 +294,79 @@
     }
 
     /* ── SOBRE ── */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 5rem;
-      align-items: center;
-    }
+  .about-skills{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:32px;
+  margin-top:40px;
+}
 
-    .about-text p {
-      color: #b0aba3;
-      line-height: 1.8;
-      font-size: 1rem;
-      font-weight: 400;
-      margin-bottom: 1.2rem;
-    }
+.skill-card{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 32px;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
 
-    .about-skills {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
+.skill-card::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    135deg,
+    rgba(200,245,66,0.06),
+    transparent 60%
+  );
+  opacity:0;
+  transition:0.3s ease;
+}
 
-    .skill-item {}
-    .skill-label {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      font-family: var(--font-mono);
-      letter-spacing: 0.06em;
-      margin-bottom: 0.5rem;
-    }
+.skill-card:hover::before{
+  opacity:1;
+}
 
-    .skill-bar {
-      height: 3px;
-      background: var(--border);
-      border-radius: 2px;
-      overflow: hidden;
-    }
+.skill-card:hover{
+  transform:translateY(-8px);
+  border-color:var(--accent);
+  box-shadow:0 0 30px rgba(200,245,66,0.10);
+}
 
-    .skill-fill {
-      height: 100%;
-      background: var(--accent);
-      border-radius: 2px;
-      width: 0;
-      transition: width 1.2s cubic-bezier(0.4,0,0.2,1);
-    }
+.skill-icon{
+  font-size:2.3rem;
+  margin-bottom:22px;
+}
+
+.skill-card h3{
+  font-size:1.3rem;
+  margin-bottom:14px;
+  color:var(--text);
+  font-weight:700;
+}
+
+.skill-card p{
+  color:#9f9f9f;
+  line-height:1.9;
+  font-size:0.95rem;
+}
+
+@media (max-width:768px){
+
+  .about-skills{
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+
+  .skill-card{
+    padding:26px;
+  }
+
+  .skill-icon{
+    font-size:2rem;
+  }
+}
 
     /* ── PROJETOS ── */
     .projects-grid {
@@ -668,6 +696,12 @@
       .hero-name { letter-spacing: -0.04em; }
     }
 
+    @media (max-width: 768px) {
+      .about-text-reveal {
+        line-height: 2;
+    }
+}
+
     /* ── CURSOR DOT ── */
     .cursor {
       width: 6px; height: 6px;
@@ -691,3 +725,8 @@
       transition: all 0.18s ease;
     }
   
+    @media (max-width: 480px) {
+  .hero-name {
+    font-size: clamp(2.8rem, 10vw, 15rem);
+  }
+}

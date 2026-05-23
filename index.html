@@ -6,11 +6,10 @@
   <meta name="description" content="Portfólio de Pedro Rodrigues, Desenvolvedor Full Stack apaixonado por criar interfaces bonitas e experiências digitais." />
   <title>Portfólio</title>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- Custom cursor (desktop only) -->
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 
@@ -38,18 +37,19 @@
   <a href="#" onclick="showPage('contato');closeMobile();return false;">Contato</a>
 </div>
 
-<!-- PAGE: HOME -->
+<!-- ═══════════════════════════════════════ -->
+<!-- PAGE: HOME                             -->
+<!-- ═══════════════════════════════════════ -->
 <div class="page active" id="page-home">
   <section id="hero">
     <div class="hero-grid-bg"></div>
     <div class="hero-accent-circle"></div>
-
     <p class="hero-eyebrow">// disponível para projetos</p>
     <h1 class="hero-name">
-      Pedro<br><span>Rodrigues</span><br>
+      Pedro<br><span>Rodrigues</span>
     </h1>
     <p class="hero-role">
-      Sou estudante de ADS e venho desenvolvendo projetos para praticar front-end, Back-end e lógica de programação.
+      Focado em desenvolvimento back-end e construção de soluções utilizando Python, Java e tecnologias web.
     </p>
     <div class="hero-cta">
       <a class="btn btn-primary" href="#" onclick="showPage('projetos');return false;">Ver projetos →</a>
@@ -67,7 +67,9 @@
   </footer>
 </div>
 
-<!-- PAGE: SOBRE -->
+<!-- ═══════════════════════════════════════ -->
+<!-- PAGE: SOBRE                            -->
+<!-- ═══════════════════════════════════════ -->
 <div class="page" id="page-sobre">
   <div class="section">
     <p class="section-label reveal">// sobre mim</p>
@@ -75,9 +77,10 @@
     <div class="divider reveal"></div>
 
     <div class="about-grid">
+      <!-- Texto -->
       <div class="about-text reveal">
         <p>
-          Olá! Sou <strong style="color:var(--text)">Pedro Henrique Rodrigues</strong>, sou estudante de Análise e Desenvolvimento de Sistemas e venho desenvolvendo projetos pessoais voltados para front-end, back-end e automações em Python.
+          Olá! Sou <strong style="color:var(--text);">Pedro Henrique Rodrigues</strong>, estudante de Análise e Desenvolvimento de Sistemas e venho desenvolvendo projetos pessoais voltados para front-end, back-end e automações em Python.
         </p>
         <p>
           Tenho desenvolvido projetos como landing pages, aplicações em Python e sistemas voltados para prática de lógica e desenvolvimento web.
@@ -86,34 +89,49 @@
           Fora do trabalho, gosto de curtir shows e praticar esportes. Gosto de transformar ideias em projetos funcionais e visualmente organizados.
         </p>
         <br>
-        <!-- CORRIGIDO: href aponta para o PDF do currículo + abre em nova aba -->
-        <a class="btn btn-primary" href="assets/curriculo.pdf" download target="_blank">↓ Baixar currículo</a>
+        <a class="btn btn-primary" href="assets/curriculo-Pedro-Rodrigues.pdf" download target="_blank">↓ Baixar currículo</a>
       </div>
 
+      <!-- Skills -->
       <div class="about-skills reveal">
-        <div class="skill-item">
-          <div class="skill-label"><span>HTML</span><span>80%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        <div class="skill-card">
+          <div class="skill-icon">🐍</div>
+          <h3>Python</h3>
+          <p>Automação, lógica de programação e visão computacional.</p>
         </div>
-        <div class="skill-item">
-          <div class="skill-label"><span>JavaScript</span><span>65%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+        <div class="skill-card">
+          <div class="skill-icon">☕</div>
+          <h3>Java</h3>
+          <p>Programação orientada a objetos e desenvolvimento back-end.</p>
         </div>
-        <div class="skill-item">
-          <div class="skill-label"><span>Java</span><span>40%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+        <div class="skill-card">
+          <div class="skill-icon">🛢️</div>
+          <h3>SQL</h3>
+          <p>Modelagem, consultas e manipulação de banco de dados.</p>
         </div>
-        <div class="skill-item">
-          <div class="skill-label"><span>CSS / Design</span><span>80%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>APIs REST</h3>
+          <p>Integração entre sistemas e comunicação de aplicações.</p>
         </div>
-        <div class="skill-item">
-          <div class="skill-label"><span>Python</span><span>70%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        <div class="skill-card">
+          <div class="skill-icon">⚛️</div>
+          <h3>React</h3>
+          <p>Criação de interfaces modernas e componentes reutilizáveis.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>Git &amp; GitHub</h3>
+          <p>Versionamento de código e organização de projetos.</p>
         </div>
       </div>
+      <!-- fim about-skills -->
+
     </div>
+    <!-- fim about-grid -->
+
   </div>
+  <!-- fim .section -->
 
   <footer>
     <p>© 2025 Pedro Henrique Rodrigues de Souza.</p>
@@ -123,47 +141,53 @@
     </div>
   </footer>
 </div>
+<!-- fim page-sobre -->
 
-<!-- PAGE: PROJETOS -->
+<!-- ═══════════════════════════════════════ -->
+<!-- PAGE: PROJETOS                         -->
+<!-- ═══════════════════════════════════════ -->
 <div class="page" id="page-projetos">
   <div class="section">
     <p class="section-label reveal">// portfólio</p>
     <h2 class="section-title reveal">Projetos</h2>
     <div class="divider reveal"></div>
 
-    <div class="projects-grid" id="projectsGrid">
-      <!-- Projeto 1 -->
+    <div class="projects-grid">
+
       <article class="project-card reveal">
-        <div class="project-img-placeholder"><img src="assets/calculator.svg" height="200px" width="100px"></div>
+        <div class="project-img-placeholder">
+          <img src="assets/calculator.svg" class="project-img" style="width: 100px; height: 100px;">
+        </div>
         <div class="project-body">
           <div class="project-tags">
             <span class="tag">Python</span>
-            <span class="tag">CSS </span>
+            <span class="tag">PyQt6</span>
           </div>
           <h3 class="project-title">Calculadora</h3>
-          <p class="project-desc">Projeto inicial básico.</p>
+          <p class="project-desc">Aplicação de calculadora desenvolvida para desktop em Python com interface gráfica.</p>
           <a class="project-link" href="https://github.com/pedro17-dev/PyCalculadora" target="_blank">Ver projeto →</a>
         </div>
       </article>
 
-      <!-- Projeto 2 -->
       <article class="project-card reveal">
-        <div class="project-img-placeholder"><img src="assets/facial.png" height="200px" width="100px"></div>
+        <div class="project-img-placeholder">
+          <img src="assets/facial.png" class="project-img" alt="Detector Facial" style="width: 100px; height: 100px;">
+        </div>
         <div class="project-body">
           <div class="project-tags">
             <span class="tag">Python</span>
-            <span class="tag">CSS</span>
-            <span class="tag">Open CV</span>
+            <span class="tag">OpenCV</span>
           </div>
           <h3 class="project-title">Detector Facial</h3>
-          <p>Sistema de detecção facial em tempo real desenvolvido com Python e OpenCV.</p>
+          <p class="project-desc">Sistema de detecção facial para desktop em tempo real desenvolvido com Python e OpenCV.</p>
           <a class="project-link" href="https://github.com/pedro17-dev/Sistema-de-Detec-o-Facial" target="_blank">Ver projeto →</a>
         </div>
       </article>
 
-      <!-- Projeto 3 -->
       <article class="project-card reveal">
-        <div class="project-img-placeholder"><img src="assets/ong-transforma-plus.svg" height="200px" width="100px"></div>
+        <div class="project-img-placeholder">
+          <img src="assets/image.png" class="project-img" alt="Site Institucional" style="width: 350px; height: 200px;">
+        </div>
         <div class="project-body">
           <div class="project-tags">
             <span class="tag">HTML5</span>
@@ -176,7 +200,6 @@
         </div>
       </article>
 
-      <!-- Projeto 4 -->
       <article class="project-card reveal">
         <div class="project-img-placeholder">🌐</div>
         <div class="project-body">
@@ -185,12 +208,11 @@
             <span class="tag">CSS</span>
           </div>
           <h3 class="project-title">Landing Page</h3>
-          <p class="project-desc">Projeto de uma landing page moderna para uma empresa fictícia de tecnologia, desenvolvido com foco em design responsivo, experiência do usuário e apresentação de serviços digitais de forma clara e profissional.</p>
+          <p class="project-desc">Landing page moderna para uma empresa fictícia de tecnologia, com foco em responsividade e apresentação de serviços digitais.</p>
           <a class="project-link" href="https://pedro17-dev.github.io/servi-os-inteligencia-artificial/" target="_blank">Ver projeto →</a>
         </div>
       </article>
 
-      <!-- Projeto 5 -->
       <article class="project-card reveal">
         <div class="project-img-placeholder">🤖</div>
         <div class="project-body">
@@ -198,38 +220,30 @@
             <span class="tag">C</span>
           </div>
           <h3 class="project-title">Cardápio</h3>
-          <p class="project-desc">Projeto básico desenvolvido em linguagem C para simular um cardápio de restaurante fictício. A aplicação permite visualizar opções de pratos e bebidas de forma simples, praticando lógica de programação, estrutura de menus e interação com o usuário pelo terminal.</p>
+          <p class="project-desc">Projeto em linguagem C para simular um cardápio de restaurante fictício pelo terminal.</p>
           <a class="project-link" href="https://github.com/pedro17-dev" target="_blank">Ver projeto →</a>
         </div>
       </article>
 
-      <!-- espaço para projeto futuro - Projeto 6:-->
-      <!--
-      <article class="project-card reveal">
-        <div class="project-img-placeholder">📱</div>
-        <div class="project-body">
-          <div class="project-tags">
-            <span class="tag"> </span>
-            <span class="tag"> </span>
-          </div>
-          <h3 class="project-title">App de Tarefas</h3>
-          <p class="project-desc">Gerenciador de tarefas offline-first, sincronização automática e modo escuro.</p>
-          <a class="project-link" href="LINK" target="_blank">Ver projeto →</a>
-        </div>
-      </article>
-      -->
     </div>
+    <!-- fim projects-grid -->
+
   </div>
+  <!-- fim .section -->
 
   <footer>
     <p>© 2025 Pedro Henrique Rodrigues de Souza.</p>
     <div class="footer-socials">
       <a href="https://github.com/pedro17-dev" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/pedro-henrique-rodrigues-de-souza-9362681a2/" target="_blank">LinkedIn</a>
     </div>
   </footer>
 </div>
+<!-- fim page-projetos -->
 
-<!-- PAGE: EXPERIÊNCIA -->
+<!-- ═══════════════════════════════════════ -->
+<!-- PAGE: EXPERIÊNCIA                      -->
+<!-- ═══════════════════════════════════════ -->
 <div class="page" id="page-experiencia">
   <div class="section">
     <p class="section-label reveal">// trajetória</p>
@@ -237,19 +251,18 @@
     <div class="divider reveal"></div>
 
     <div class="timeline">
-      <!-- Experiência profissional -->
+
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <p class="timeline-date">Em busca da primeira experiência profissional</p>
       </div>
 
-      <!-- Formação -->
       <div class="timeline-item reveal">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <h3 class="timeline-role">Formação Acadêmica</h3>
           <p class="timeline-company">Análise e Desenvolvimento de Sistemas</p>
-          <p class="timeline-date">Centro Universitário Braz Cubas — Cursando - Previsão de Término: 07/2027 - EAD</p>
+          <p class="timeline-date">Centro Universitário Braz Cubas — Cursando · Previsão de Término: 07/2027 · EAD</p>
         </div>
       </div>
 
@@ -260,15 +273,19 @@
           <p class="timeline-company">Santander Bootcamp 2026 - 1º Semestre</p>
           <p class="timeline-date">Santander Open Academy — Em andamento</p>
           <p class="timeline-company">Projeto Fullstack do ZERO (React + Node + PostgreSQL + TS)</p>
-          <p class="timeline-date">Udemy - 2026</p>
-            <p class="timeline-company"> 7 Dias de Java</p>
-            <p class="timeline-date">Udemy - 2026</p>
-            <p class="timeline-company">Programação em Python</p>
-            <p class="timeline-date">Senai - 2024</p>
-           </div>
+          <p class="timeline-date">Udemy · 2026</p>
+          <p class="timeline-company">7 Dias de Java</p>
+          <p class="timeline-date">Udemy · 2026</p>
+          <p class="timeline-company">Programação em Python</p>
+          <p class="timeline-date">Senai · 2024</p>
+        </div>
       </div>
+
     </div>
+    <!-- fim timeline -->
+
   </div>
+  <!-- fim .section -->
 
   <footer>
     <p>© 2025 Pedro Henrique Rodrigues de Souza.</p>
@@ -277,8 +294,11 @@
     </div>
   </footer>
 </div>
+<!-- fim page-experiencia -->
 
-<!-- PAGE: CONTATO -->
+<!-- ═══════════════════════════════════════ -->
+<!-- PAGE: CONTATO                          -->
+<!-- ═══════════════════════════════════════ -->
 <div class="page" id="page-contato">
   <div class="section">
     <p class="section-label reveal">// fale comigo</p>
@@ -286,20 +306,31 @@
     <div class="divider reveal"></div>
 
     <div class="contact-grid">
+
       <div class="contact-info reveal">
         <p>Estou sempre aberto a novas oportunidades, projetos freelance ou só uma boa conversa sobre tecnologia. Me manda uma mensagem!</p>
-
         <div class="contact-links">
-          <!-- CORRIGIDO: mailto: correto -->
           <a class="contact-link-item" href="mailto:pedrohrodriguessouza@gmail.com">
             <span class="icon">✉</span>
             <span class="contact-link-label">pedrohrodriguessouza@gmail.com</span>
           </a>
           <a class="contact-link-item" href="https://www.linkedin.com/in/pedro-henrique-rodrigues-de-souza-9362681a2/" target="_blank">
-            <span class="icon"><img src="assets/linkedin.svg" height="100px" width="150px" alt="LinkedIn"></span>
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </span>
+            <span class="contact-link-label">LinkedIn</span>
           </a>
           <a class="contact-link-item" href="https://github.com/pedro17-dev" target="_blank">
-            <span class="icon"><img src="assets/github.svg" height="100px" width="150px" alt="GitHub"></span>
+            <span class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </span>
+            <span class="contact-link-label">GitHub</span>
           </a>
           <a class="contact-link-item" href="https://wa.me/5511962654955" target="_blank">
             <span class="icon">✆</span>
@@ -307,7 +338,9 @@
           </a>
         </div>
       </div>
-          <form class="contact-form reveal" id="contactForm" onsubmit="handleSubmit(event)">
+      <!-- fim contact-info -->
+
+      <form class="contact-form reveal" id="contactForm" onsubmit="handleSubmit(event)">
         <div class="form-group">
           <label for="name">Nome</label>
           <input type="text" id="name" name="name" placeholder="Seu nome completo" required />
@@ -323,8 +356,13 @@
         <button type="submit" class="btn btn-primary">Enviar mensagem →</button>
         <p class="form-status" id="formStatus"></p>
       </form>
+      <!-- fim contact-form -->
+
     </div>
+    <!-- fim contact-grid -->
+
   </div>
+  <!-- fim .section -->
 
   <footer>
     <p>© 2025 Pedro Henrique Rodrigues de Souza. Todos os direitos reservados.</p>
@@ -335,21 +373,18 @@
     </div>
   </footer>
 </div>
+<!-- fim page-contato -->
 
-<!-- SCRIPTS -->
 <script>
   // ── PAGE NAVIGATION ──
   function showPage(id) {
-    // CORRIGIDO: limpa .visible ao trocar de página para o reveal funcionar corretamente
     document.querySelectorAll('.reveal').forEach(el => el.classList.remove('visible'));
-
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     const target = document.getElementById('page-' + id);
     if (target) {
       target.classList.add('active');
       window.scrollTo({ top: 0, behavior: 'smooth' });
       setTimeout(() => initReveal(), 50);
-      if (id === 'sobre') setTimeout(() => animateBars(), 300);
     }
   }
 
@@ -382,17 +417,7 @@
     });
   }
 
-  // ── SKILL BARS ──
-  function animateBars() {
-    document.querySelectorAll('.skill-fill').forEach(bar => {
-      const w = bar.getAttribute('data-width');
-      bar.style.width = w + '%';
-    });
-  }
-
   // ── CONTACT FORM (Formspree) ──
-    const FORMSPREE_ID = 'SEU_ID_FORMSPREE';
-
   async function handleSubmit(e) {
     e.preventDefault();
     const status = document.getElementById('formStatus');
@@ -403,7 +428,7 @@
     const formData = new FormData(e.target);
 
     try {
-      const response = await fetch(`https://formspree.io/f/xykoreyj`, {
+      const response = await fetch('https://formspree.io/f/xykoreyj', {
         method: 'POST',
         body: formData,
         headers: { 'Accept': 'application/json' }
